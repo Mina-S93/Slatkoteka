@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Secular One', sans-serif;
+}
+
+#mobile-nav{
+    display: none;
+}
+
+.container{
+    background-color: #ffebf2;
+    padding: 1% 0;
+}
+.main-logo{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#main-nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-pages-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 60%;
+}
+
+.main-pages-list li{
+    list-style: none;
+}
+
+.list-item{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.05px;
+    font-weight: bold;
+}
+
+.language-cart{
+    display: flex;
+    font-size: 14.3px;
+    align-items: center;
+    justify-content: end;
+    flex-basis: 25%;
+}
+
+.language a{
+    text-decoration: none;
+    color: black;
+}
+
+.cart{
+    margin-left: 7%;
+}
+
+.language a:first-of-type,
+.cart span{
+    color: #f650a0;
+}
+
+.page-info{
+    background: url(assets/path-9-copy-2.png) no-repeat;
+    background-position: -2vw 90%;
+    background-size: cover;
+    padding: 5% 0 3% 0;
+}
+
+.page-info div{
+    width: 80%;
+    margin: auto;
+}
+
+.page-info h1{
+    font-size: 55px;
+    letter-spacing: 0.18px;
+    font-weight: normal;
+}
+
+.page-info p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05px;
+    width: 70%;
+}
+
+.current-page{
+    width: 80%;
+    font-family: 'Varela Round', sans-serif;
+    margin: auto;
+    font-size: 12px;
+}
+
+.current-page span{
+    color: #999;
+}
+
+.shop-location{
+    width: 80%;
+    margin: 3% auto;
+    box-shadow: 0 1px 9px rgba(0, 35, 64, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-location-info{
+    flex-basis: 47%;
+    margin: 4%;
+}
+
+.shop-location-info h1{
+    font-family: 'Secular One', sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.07px;
+    font-weight: normal;
+}
+
+.shop-location-info h1 img{
+    margin-right: 1%;
+    vertical-align: middle;
+}
+
+.contact-available{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px dashed #e7e7e7;
+    justify-content: flex-end;
+}
+
+.contact,
+.available{
+    flex-basis: 50%;
+    margin-top: 4%;
+}
+
+.contact h3,
+.available h3{
+    font-family: 'Secular One', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.contact p{
+    font-family:'Varela Round', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05px;
+    line-height: 18px;
+    margin: 4% 0;
+}
+
+.contact p:first-of-type{
+    text-decoration: underline;
+}
+
+.available-items{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4%;
+}
+
+.available-items p{
+    padding: 1%;
+    font-family: 'Secular One', sans-serif;
+    font-weight: normal;
+    font-size: 12.9;
+    letter-spacing: 0.04px;
+    border-radius: 3px;
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+
+.available-items p:first-of-type{
+    background-color: #ffebf2;
+}
+
+.available-items p:nth-of-type(2){
+    background-color: #a3e8d6;
+}
+
+.available-items p:nth-of-type(3){
+    background-color: #e0c5ec;
+}
+
+.available-items p:last-of-type{
+    background-color: #fcfa96;
+}
+
+.order-info{
+    text-align: right;
+    transform: translateY(50%);
+    background-color: #fff;
+    font-family:'Varela Round', sans-serif;
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: 0.04;
+    color: #999;
+}
+
+.shop-location-info-img{
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-location-map {
+    flex-basis: 40%;
+    height: 30vw;
+}
+
+.shop-location-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.soon{
+    width: 80%;
+    margin: 6% auto;
+    height: 35vw;
+    background: url(assets/rectangle.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+}
+
+.soon img:first-of-type{
+    position: relative;
+    top: -8%;
+    width: 30%;
+}
+
+.soon img:last-of-type{
+    position: relative;
+    top: 20%;
+    width: 25%;
+    margin-left: 3%;
+}
+
+.soon h1{
+    font-family: 'Secular One', sans-serif;
+    font-size: 45px;
+    line-height: 55px;
+    letter-spacing: 0.15px;
+    flex-basis: 30%;
+    margin-left: 5%;
+    color: #ffebf2;
+}
+
+.learn-more{
+    text-align: center;
+    margin: 10% 0;
+}
+
+.learn-more h1{
+    font-family: 'Secular One', sans-serif;
+    font-size: 35px;
+    letter-spacing: 0.12px;
+}
+
+.learn-more p{
+    font-family:'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.05px;
+    color: #666;
+    margin-top: 2%;
+}
+
+.learn-more p a {
+    text-decoration: none;
+    color: #f650a0;
+}
+
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-areas:    'photo1 photo3 photo3 photo3 photo6 photo6 photo6 photo6 photo9 photo9 photo12 photo12 photo12 photo15'
+                            'photo1 photo3 photo3 photo3 photo6 photo6 photo6 photo6 photo9 photo9 photo12 photo12 photo12 photo15'
+                            'photo1 photo4 photo4 photo4 photo6 photo6 photo6 photo6 photo10 photo10 photo12 photo12 photo12 photo16'
+                            'photo1 photo4 photo4 photo4 photo6 photo6 photo6 photo6 photo10 photo10 photo13 photo13 photo13 photo16'
+                            'photo1 photo4 photo4 photo4 photo7 photo7 photo11 photo11 photo11 photo11 photo13 photo13 photo13 photo16'
+                            'photo1 photo5 photo5 photo5 photo7 photo7 photo11 photo11 photo11 photo11 photo14 photo14 photo14 photo16'
+                            'photo2 photo5 photo5 photo5 photo8 photo8 photo11 photo11 photo11 photo11 photo14 photo14 photo14 photo16'
+                            'photo2 photo5 photo5 photo5 photo8 photo8 photo11 photo11 photo11 photo11 photo14 photo14 photo14 photo16';
+    gap: 1vw;
+}
+
+.grid img{
+    width: 100%;
+    height: 100%;
+}
+ 
+#photo-1{
+    grid-area: photo1;
+}
+
+#photo-2{
+    grid-area: photo2;
+}
+
+#photo-3{
+    grid-area: photo3;
+}
+
+#photo-4{
+    grid-area: photo4;
+}
+
+#photo-5{
+    grid-area: photo5;
+}
+
+#photo-6{
+    grid-area: photo6;
+}
+
+#photo-7{
+    grid-area: photo7;
+}
+
+#photo-8{
+    grid-area: photo8;
+}
+
+#photo-9{
+    grid-area: photo9;
+}
+
+#photo-10{
+    grid-area: photo10;
+}
+
+#photo-11{
+    grid-area: photo11;
+}
+
+#photo-12{
+    grid-area: photo12;
+}
+
+#photo-13{
+    grid-area: photo13;
+}
+
+#photo-14{
+    grid-area: photo14;
+}
+
+#photo-15{
+    grid-area: photo15;
+}
+
+#photo-16{
+    grid-area: photo16;
+}
+
+.about-us{
+    width: 80%;
+    margin: 5% auto;
+}
+
+.about-us-child{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.about-us h4{
+    font-family: 'Secular One', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.13px;
+    margin-bottom: 4%;
+}
+
+.about-us img{
+    margin-right: 10%;
+}
+
+.about-us p{
+    font-family:'Varela Round', sans-serif;
+    font-size: 14px;
+}
+
+.button{
+    margin-top: 2%;
+    padding: 0.5vh 1vw;
+    font-family: 'Secular One', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    background-color: #f454a0;
+    border: none;
+    border-radius: 1.9px;
+    cursor: pointer;
+}
+
+.big{
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    background-color: #d8d8d8;
+    margin-right: 1%;
+}
+
+.small{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background-color: #d8d8d8;
+    margin-right: 1%;
+}
+
+.avards{
+    flex-basis: 18%;
+}
+
+.support{
+    flex-basis: 80%;
+}
+
+.ref{
+    flex-basis: 45%;
+}
+
+.catering{
+    flex-basis: 50%;
+}
+
+.catering h4{
+    margin-bottom: 0%;
+}
+
+footer{
+    background: url(assets/path-9-copy-2\ \(2\).png) no-repeat, url(assets/path-9-copy-2\ \(3\).png) no-repeat, #ffebf2;
+    background-position: left bottom, 67% bottom;
+    width: 99%;
+    box-shadow: 0 1px 9px rgba(0, 35, 64, 0.2);
+    position: relative;
+}
+
+.donut{
+    position: absolute;
+    bottom: 0;
+    right: -1%;
+}
+
+.footer-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 5% 0;
+}
+
+.footer-logo{
+    flex-basis: 25%;
+    margin-right: 3%;
+}
+
+.footer-logo-img {
+    width: 60%;
+}
+
+.footer-logo p{
+    font-family:'Varela Round', sans-serif;
+    font-size: 14px;
+    color: #222;
+    margin: 5% 0;
+}
+
+.find-us img{
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+footer .main-pages-list{
+    flex-direction: column;
+    flex-basis: 15%;
+    align-items: flex-start;
+    font-size: 15px;
+}
+
+.footer-pages li{
+    list-style-type: none;
+    font-family:'Varela Round', sans-serif;
+    font-size: 14px;
+    margin-bottom: 4%;
+}
+
+.footer-pages li a{
+    color: #222;
+    text-decoration: none;
+}
+
+.join-us{
+    margin-left: 5%;
+}
+
+.join-us p{
+    color: #f454a0;
+    font-family:'Varela Round', sans-serif;
+    font-size: 14px;
+    margin-bottom: 5%;
+}
+
+.development{
+    width: 80%;
+    margin: auto;
+    color: #656565;
+    font-size: 12px;
+    font-family:'Varela Round', sans-serif;
+    padding-bottom: 2%;
+}
+
+
+/* Tablet and mobile navigatioin */
+@media screen and (max-width: 1023px) {
+    #mobile-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2%;
+        flex-wrap: wrap;
+    }
+
+    .toogle{
+        display: none;
+    }
+
+    .mobile-pages-list{
+        background-color: #ffebf2;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-pages-list li{
+        list-style: none;
+        margin: 1% 0;
+    }
+
+    #main-nav{
+        display: none;
+    }
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 600px){
+
+    .page-info div{
+        text-align: center;
+    }
+
+    .page-info div p{
+        width: 100%;
+    }
+
+    .shop-location{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .shop-location-info{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-available{
+        flex-direction: column;
+    }
+
+    .available-items {
+        justify-content: center;
+    }
+
+    .shop-location-info-img{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .shop-location-info-img img{
+        margin-bottom: 3%;
+    }
+
+    .shop-location-map{
+        width: 100%;
+    }
+
+    .soon{
+        width: 90%;
+    }
+
+    .soon h1{
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .learn-more h1{
+        font-size: 18px;
+    }
+
+    .learn-more p{
+        font-size: 14px;
+    }
+
+    .about-us{
+        width: 90%;
+        text-align: center;
+    }
+
+    .about-us-child{
+        flex-direction: column;
+    }
+
+    .about-us-child div:last-child{
+        margin-top: 5%;
+    }
+
+    footer{
+        background-size: 10%, 35%;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-logo,
+    footer .main-pages-list,
+    .footer-pages,
+    .join-us{
+        width: 100%;
+        margin: 0 0 5% 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .donut{
+        width: 35%;
+    }
+
+    .development{
+        width: 60%;
+        margin-left: 5%;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+    .shop-location{
+        flex-wrap: wrap;
+    }
+
+    .shop-location-info{
+        flex-basis: 100%;
+    }
+
+    .shop-location-map{
+        flex-basis: 100%;
+    }
+
+    .soon h1,
+    .learn-more h1{
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .about-us-child{
+        flex-direction: column;
+    }
+
+    .about-us-child div:last-child{
+        margin-top: 5%;
+    }
+
+    footer{
+        background-size: 10%, 35%;
+    }
+
+    .footer-container{
+        flex-wrap: wrap;
+    }
+
+    .footer-logo,
+    footer .main-pages-list,
+    .footer-pages,
+    .join-us{
+        flex-basis: 50%;
+        margin: 0 0 5% 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .donut{
+        width: 35%;
+    }
+
+    .development{
+        width: 60%;
+        margin-left: 10%;
+    }
+}
+
+/* Laptop */
+
+@media screen and (min-width: 1024px) and (max-width: 1350px) {
+    .shop-location-map{
+        height: 40vw;
+    }
+
+    .soon h1,
+    .learn-more h1{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .avards{
+        flex-basis: 30%;
+    }
+    
+    .support{
+        flex-basis: 68%;
+    }
+
+    .donut{
+        width: 25%;
+    }
+
+    footer{
+        background-size: 10%, 35%;
+    }
+    
+}
+
